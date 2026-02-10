@@ -12,7 +12,7 @@ const Hero = () => {
                     className="w-full h-full object-cover"
                 />
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="absolute inset-0 bg-black/90"></div>
             </div>
 
             <div className="container mx-auto px-4 lg:px-8 relative z-10 text-white">
@@ -20,11 +20,11 @@ const Hero = () => {
                     <p className="text-lg md:text-xl font-medium mb-4 text-brand-green">
                         Empowering the Next Generation
                     </p>
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight">
+                    <h2 className="text-2xl font-black mb-8 leading-tight text-white">
                         Digital Skills.<br />
                         Real-World Solutions.
-                    </h1>
-                    <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-xl">
+                    </h2>
+                    <p className="text-lg text-gray-200 mb-10 max-w-xl">
                         Dev Next Foundation partners with schools, communities, and organizations
                         to deliver digital education programs and develop technology-driven
                         solutions for lasting impact.

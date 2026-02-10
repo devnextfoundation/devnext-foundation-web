@@ -5,12 +5,12 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-brand-navy text-white pt-16 pb-8">
+        <footer className="bg-[#0B223D] text-white pt-16 pb-8">
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Brand & Mission */}
                     <div className="space-y-6">
-                        <img src="/assets/DNF-logo.svg" alt="DNF Logo" className="h-10 brightness-0 invert" />
+                        <img src="/assets/DNF-logo-footer.png" alt="DNF Logo" className="h-10" />
                         <p className="text-gray-400 max-w-xs">
                             Preparing young people with practical digital and technical skills for a confident future.
                         </p>
