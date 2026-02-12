@@ -2,32 +2,29 @@ import React from 'react';
 
 const ImpactCard = ({ number, label, description, image, color }) => {
     const bgColors = {
-        green: 'bg-brand-green/10 border-brand-green/20',
-        yellow: 'bg-brand-yellow/10 border-brand-yellow/20',
-        cyan: 'bg-brand-cyan/10 border-brand-cyan/20',
+        green: 'bg-[#25955A]',
+        yellow: 'bg-[#D79C14]',
+        cyan: 'bg-[#2F8588]',
     };
 
     return (
-        <div className={`rounded-3xl overflow-hidden border bg-yellow ${bgColors[color]} group transition-all duration-300 hover:shadow-xl`}>
-            <div className="h-64 overflow-hidden relative">
-                <img
-                    src={image}
-                    alt={label}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent opacity-60"></div>
-                <div className="absolute bottom-6 left-6 text-white">
-                    <h3 className="text-4xl font-bold mb-1">{number}</h3>
-                    <p className="text-lg font-semibold">{label}</p>
-                </div>
-            </div>
-            <div className="p-6">
-                <p className="text-brand-gray">{description}</p>
+        <div className={`${bgColors[color]} rounded-[2rem] overflow-hidden relative h-[360px] p-6 text-white group transition-all duration-300 hover:shadow-xl`}>
+            
+            <img
+                src={image}
+                alt={label}
+                className="absolute bottom-0 left-0 w-auto h-2/3 object-contain object-bottom grayscale contrast-125 scale-[1.2] group-hover:scale-[1.30] origin-bottom-left transition-transform duration-500"
+            />
+            <div className="absolute bottom-6 left-6 text-white z-10 pointer-events-none ml-3">
+                <h3 className="text-4xl font-bold mb-1">{number}</h3>
+                <p className="text-lg font-semibold">{label}</p>
+                <p className="text-sm font-medium leading-relaxed max-w-[240px] opacity-90">
+                    {description}
+                </p>
             </div>
         </div>
     );
 };
-
 const ImpactSection = () => {
     const impacts = [
         {
@@ -66,7 +63,7 @@ const ImpactSection = () => {
                             Impact Through School Partnerships
                         </h2>
                     </div>
-                    <p className="text-brand-gray max-w-sm text-lg">
+                    <p className="text-brand-gray-700 max-w-sm text-lg">
                         We work with schools to deliver structured programs that equip students
                         with practical, future-ready skills.
                     </p>

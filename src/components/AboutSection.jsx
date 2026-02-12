@@ -3,7 +3,7 @@ import Button from './Button';
 
 const AboutSection = () => {
     return (
-        <section id="about" className="py-24 bg-white overflow-hidden">
+        <section id="about" className="py-24 bg-[#F1F7FF] overflow-hidden">
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     <div className="lg:w-1/2 space-y-8 animate-fade-in">
@@ -14,7 +14,7 @@ const AboutSection = () => {
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-navy leading-tight">
                             Who We Are and Why We Exist
                         </h2>
-                        <p className="text-lg text-brand-gray max-w-lg leading-relaxed">
+                        <p className="text-lg text-brand-gray-700 max-w-lg leading-relaxed">
                             Dev Next Foundation is a youth-centered nonprofit dedicated to closing
                             the gap between education and real-world opportunity. We create access
                             to practical digital and technical skills that help young people build
