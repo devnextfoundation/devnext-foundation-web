@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = [
-        { name: 'About DNF', href: '#about' },
+        { name: 'About DNF', href: '/about', isRoute: true },
         { name: 'Events', href: '#events' },
         { name: 'Programs', href: '#programs' },
         { name: 'Contact', href: '#contact' },
@@ -22,13 +23,23 @@ const Header = () => {
                 {/* Desktop Navigation */}
                 <nav className="hidden lg:flex items-center space-x-8">
                     {navLinks.map((link) => (
-                        <a
-                            key={link.name}
-                            href={link.href}
-                            className="text-brand-text font-medium hover:text-brand-navy transition-colors"
-                        >
-                            {link.name}
-                        </a>
+                        link.isRoute ? (
+                            <Link
+                                key={link.name}
+                                to={link.href}
+                                className="text-brand-text font-medium hover:text-brand-navy transition-colors"
+                            >
+                                {link.name}
+                            </Link>
+                        ) : (
+                            <a
+                                key={link.name}
+                                href={link.href}
+                                className="text-brand-text font-medium hover:text-brand-navy transition-colors"
+                            >
+                                {link.name}
+                            </a>
+                        )
                     ))}
                     <div className="flex items-center space-x-4 ml-4">
                         <Button variant="outline" size="sm">Volunteer</Button>
@@ -55,14 +66,25 @@ const Header = () => {
             {isOpen && (
                 <div className="lg:hidden bg-white border-t border-gray-100 py-4 px-4 space-y-4 animate-fade-in">
                     {navLinks.map((link) => (
-                        <a
-                            key={link.name}
-                            href={link.href}
-                            className="block text-brand-text font-medium py-2"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            {link.name}
-                        </a>
+                        link.isRoute ? (
+                            <Link
+                                key={link.name}
+                                to={link.href}
+                                className="block text-brand-text font-medium py-2"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                {link.name}
+                            </Link>
+                        ) : (
+                            <a
+                                key={link.name}
+                                href={link.href}
+                                className="block text-brand-text font-medium py-2"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                {link.name}
+                            </a>
+                        )
                     ))}
                     <div className="flex flex-col space-y-4 pt-4">
                         <Button variant="outline" className="w-full">Volunteer</Button>

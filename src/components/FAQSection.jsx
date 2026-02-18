@@ -54,7 +54,7 @@ const FAQSection = () => {
                     <div className="lg:w-1/3">
                         <div className="inline-flex items-center space-x-2 text-brand-green font-semibold mb-4">
                             <span className="w-2 h-2 rounded-full bg-brand-green"></span>
-                            <span>FAQ</span>
+                            <span className='text-black'>FAQ</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold text-brand-navy leading-tight mb-6">
                             What You’re Thinking,<br />We Answered.

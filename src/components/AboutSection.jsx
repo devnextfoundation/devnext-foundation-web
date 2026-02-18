@@ -7,9 +7,9 @@ const AboutSection = () => {
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     <div className="lg:w-1/2 space-y-8 animate-fade-in">
-                        <div className="inline-flex items-center space-x-2 text-brand-green font-semibold">
+                        <div className="inline-flex items-center space-x-2 font-semibold">
                             <span className="w-2 h-2 rounded-full bg-brand-green"></span>
-                            <span>About DNF</span>
+                            <span className='text-black'>About DNF</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-navy leading-tight">
                             Who We Are and Why We Exist

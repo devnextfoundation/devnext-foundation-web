@@ -55,9 +55,9 @@ const ImpactSection = () => {
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
                     <div className="max-w-2xl">
-                        <div className="inline-flex items-center space-x-2 text-brand-green font-semibold mb-4">
+                        <div className="inline-flex items-center space-x-2 font-semibold mb-4">
                             <span className="w-2 h-2 rounded-full bg-brand-green"></span>
-                            <span>Our Impact</span>
+                            <span className='text-black'>Our Impact</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold text-brand-navy leading-tight">
                             Impact Through School Partnerships

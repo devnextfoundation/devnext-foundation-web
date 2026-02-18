@@ -7,9 +7,9 @@ const ProgramsSection = () => {
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
                     <div className="max-w-2xl">
-                        <div className="inline-flex items-center space-x-2 text-brand-green font-semibold mb-4">
+                        <div className="inline-flex items-center space-x-2 font-semibold mb-4">
                             <span className="w-2 h-2 rounded-full bg-brand-green"></span>
-                            <span>Programs</span>
+                            <span className='text-black'>Programs</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold text-brand-navy leading-tight">
                             Learning Pathways That<br />Create Opportunity
@@ -46,8 +46,8 @@ const ProgramsSection = () => {
                 </div>
 
                 {/* Slider Controls Placeholder */}
-                <div className="mt-12 flex items-center justify-between">
-                    <div className="flex space-x-4">
+                <div className="mt-12 flex items-center justify-center">
+                    <div className="flex items-center justify-center space-x-4">
                         <button className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:border-brand-navy hover:text-brand-navy transition-all">
                             &larr;
                         </button>
@@ -60,7 +60,12 @@ const ProgramsSection = () => {
                             &rarr;
                         </button>
                     </div>
+                </div>
+                <div className="flex justify-between items-center">
+                    <p className='text-black max-w-sm text-lg'>Your support can transformed lives and inspire better futures.</p>
+                    <hr className='w-1/2 text-black' />
                     <a href="#" className="text-brand-navy font-bold hover:underline">Explore Program &rarr;</a>
+
                 </div>
             </div>
         </section>
